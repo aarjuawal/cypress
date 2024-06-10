@@ -23,17 +23,13 @@ it("logout sucessfull",()=>{
     cy.contains('Sign Out').click()
     cy.url().should("contain","https://roles.staging.rigohr.com/login")
 })
+
 it("login again",()=>{
     cy.visit("https://roles.staging.rigohr.com/hr/dashboard")
     cy.get("#userName").type("sapana@rigonepal.com").should('be.visible')
     cy.get("#password").type("Admin@12")
     cy.get(".login-submit").click();
-    cy.url().should("contain","https://roles.staging.rigohr.com/hr/dashboards")
-                                                                                                                                                                                                                                                                              
+    cy.url().should("contain","https://roles.staging.rigohr.com/hr/dashboards")  
 
-
-
-    
 })
 })
-
