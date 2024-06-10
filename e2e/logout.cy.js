@@ -12,8 +12,17 @@ describe("logout sucessfully",()=>{
 
 describe("allowance request ",()=>{
     it("allowance request with valid credentials",()=>{
-    cy.visit("")
-    cy.get().click()
+    cy.visit("https://roles.staging.rigohr.com/allowancerequest")
+    cy.get(".css-1gbfbiu").click()
     cy.contains("Allowance Request").click()
 })
+})
+describe("leave request",()=>{
+    it("leave request with invalid credentials",()=>{
+     
+    cy.visit("https://roles.staging.rigohr.com/leaverequest")
+    cy.get("").click()
+    cy.contains("leave Request").click()
+})
+   
 })
