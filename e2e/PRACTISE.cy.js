@@ -1,4 +1,3 @@
-const { it } = require("mocha")
 
 //write a testcase that confirms that image have alt tags
 describe("Image",()=>{
