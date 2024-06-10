@@ -9,7 +9,7 @@ it("login sucessful",()=>{
     cy.get(".login-submit").click();
     cy.url().should("contain","https://roles.staging.rigohr.com/hr/dashboard")
     
-})
+})        
 it("all the image have alt tags",()=>{
     cy.visit("https://roles.staging.rigohr.com/hr/dashboard")
     cy.get('img').each(($img)=>{
